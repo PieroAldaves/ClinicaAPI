@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Clinica.Repository;
 using Clinica.Repository.context;
@@ -16,6 +18,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using RapiSolver.Api;
 
 namespace Clinica.Api
 {
@@ -76,6 +80,23 @@ namespace Clinica.Api
             services.AddTransient<IUsuarioRepository, UsuarioRepository> ();
             services.AddTransient<IUsuarioService, UsuarioService> ();
 
+            services.AddCors (options => {
+                options.AddPolicy ("Todos",
+                    builder => builder.WithOrigins ("*").WithHeaders ("*").WithMethods ("*"));
+            });
+
+
+            services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Clinica", Version = "v1" });
+            // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
+
 
         }
 
@@ -97,6 +118,14 @@ namespace Clinica.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint(SwaggerConfiguration.EndpointUrl, SwaggerConfiguration.EndpointDescription);
+            });
+
         }
     }
 }
