@@ -2964,11 +2964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Service\\Clinica.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Service\\Clinica.Service.csproj",
       "projectName": "Clinica.Service",
-      "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Service\\Clinica.Service.csproj",
+      "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Service\\Clinica.Service.csproj",
       "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Service\\obj\\",
+      "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2984,11 +2984,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Entity\\Clinica.Entity.csproj": {
-              "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Entity\\Clinica.Entity.csproj"
+            "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Entity\\Clinica.Entity.csproj": {
+              "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Entity\\Clinica.Entity.csproj"
             },
-            "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Repository\\Clinica.Repository.csproj": {
-              "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Repository\\Clinica.Repository.csproj"
+            "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Repository\\Clinica.Repository.csproj": {
+              "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Repository\\Clinica.Repository.csproj"
             }
           }
         }

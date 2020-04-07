@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Entity\\Clinica.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Entity\\Clinica.Entity.csproj",
       "projectName": "Clinica.Entity",
-      "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Entity\\Clinica.Entity.csproj",
+      "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Entity\\Clinica.Entity.csproj",
       "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica Web\\Clinica.Entity\\obj\\",
+      "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
