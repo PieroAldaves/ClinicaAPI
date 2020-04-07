@@ -4,21 +4,21 @@ using Clinica.Service;
 
 namespace Clinica.Api.Controllers
 {
-    [Route("api/especialidades")]
+    [Route("api/horarioes")]
     [ApiController]
 
-    public class EspecialidadController : ControllerBase
+    public class HorarioController : ControllerBase
     {
         
-        private IEspecialidadService especialidadService;
+        private IHorarioService horarioService;
 
-        public EspecialidadController(IEspecialidadService especialidadService)
+        public HorarioController(IHorarioService horarioService)
         {
-            this.especialidadService = especialidadService;
+            this.horarioService = horarioService;
         }
 
         /// <summary>
-        /// Me permite devolver todas las especialidades
+        /// Me permite devolver todas las horarioes
         /// </summary>
         /// <returns></returns>
 
@@ -26,34 +26,34 @@ namespace Clinica.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                especialidadService.GetAll()
+                horarioService.GetAll()
             );
         }
 
 
         /// <summary>
-        /// Me permite ingresar una especialidad
+        /// Me permite ingresar una horario
         /// </summary>
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] Especialidad especialidad)
+        public ActionResult Post([FromBody] Horario horario)
         {
             return Ok(
-                especialidadService.Save(especialidad)
+                horarioService.Save(horario)
             );
         }
 
 
         /// <summary>
-        /// Me permite devolver una especialidad dependiendo de su id
+        /// Me permite devolver una horario dependiendo de su id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
             return Ok(
-                especialidadService.Get(id)
+                horarioService.Get(id)
             );
         }
 
