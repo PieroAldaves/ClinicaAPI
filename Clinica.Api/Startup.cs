@@ -66,6 +66,17 @@ namespace Clinica.Api
 
             services.AddTransient<ISeguroRepository, Seguropository> ();
             services.AddTransient<ISeguroService, SeguroService> ();
+
+            services.AddTransient<ISeguroRepository, Seguropository> ();
+            services.AddTransient<ISeguroService, SeguroService> ();
+
+            services.AddTransient<ITurnoRepository, TurnoRepository> ();
+            services.AddTransient<ITurnoService, TurnoService> ();
+
+            services.AddTransient<IUsuarioRepository, UsuarioRepository> ();
+            services.AddTransient<IUsuarioService, UsuarioService> ();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
