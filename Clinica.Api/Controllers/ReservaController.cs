@@ -1,24 +1,25 @@
+        
 using Microsoft.AspNetCore.Mvc;
 using Clinica.Entity;
 using Clinica.Service;
 
 namespace Clinica.Api.Controllers
 {
-    [Route("api/horarios")]
+    [Route("api/reservas")]
     [ApiController]
 
-    public class HorarioController : ControllerBase
+    public class ReservaController : ControllerBase
     {
         
-        private IHorarioService horarioService;
+        private IReservaService reservaService;
 
-        public HorarioController(IHorarioService horarioService)
+        public ReservaController(IReservaService reservaService)
         {
-            this.horarioService = horarioService;
+            this.reservaService = reservaService;
         }
 
         /// <summary>
-        /// Me permite devolver todas las horarioes
+        /// Me permite devolver todas las reservaes
         /// </summary>
         /// <returns></returns>
 
@@ -26,34 +27,34 @@ namespace Clinica.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                horarioService.GetAll()
+                reservaService.GetAll()
             );
         }
 
 
         /// <summary>
-        /// Me permite ingresar una horario
+        /// Me permite ingresar una reserva
         /// </summary>
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] Horario horario)
+        public ActionResult Post([FromBody] Reserva reserva)
         {
             return Ok(
-                horarioService.Save(horario)
+                reservaService.Save(reserva)
             );
         }
 
 
         /// <summary>
-        /// Me permite devolver una horario dependiendo de su id
+        /// Me permite devolver una reserva dependiendo de su id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
             return Ok(
-                horarioService.Get(id)
+                reservaService.Get(id)
             );
         }
 

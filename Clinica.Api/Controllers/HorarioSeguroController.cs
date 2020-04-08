@@ -4,21 +4,21 @@ using Clinica.Service;
 
 namespace Clinica.Api.Controllers
 {
-    [Route("api/horarios")]
+    [Route("api/horarioseguros")]
     [ApiController]
 
-    public class HorarioController : ControllerBase
+    public class HorarioSeguroController : ControllerBase
     {
         
-        private IHorarioService horarioService;
+        private IHorarioSeguroService horarioseguroService;
 
-        public HorarioController(IHorarioService horarioService)
+        public HorarioSeguroController(IHorarioSeguroService horarioseguroService)
         {
-            this.horarioService = horarioService;
+            this.horarioseguroService = horarioseguroService;
         }
 
         /// <summary>
-        /// Me permite devolver todas las horarioes
+        /// Me permite devolver todas las horarioseguroes
         /// </summary>
         /// <returns></returns>
 
@@ -26,34 +26,34 @@ namespace Clinica.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                horarioService.GetAll()
+                horarioseguroService.GetAll()
             );
         }
 
 
         /// <summary>
-        /// Me permite ingresar una horario
+        /// Me permite ingresar una horarioseguro
         /// </summary>
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] Horario horario)
+        public ActionResult Post([FromBody] HorarioSeguro horarioseguro)
         {
             return Ok(
-                horarioService.Save(horario)
+                horarioseguroService.Save(horarioseguro)
             );
         }
 
 
         /// <summary>
-        /// Me permite devolver una horario dependiendo de su id
+        /// Me permite devolver una horarioseguro dependiendo de su id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
             return Ok(
-                horarioService.Get(id)
+                horarioseguroService.Get(id)
             );
         }
 

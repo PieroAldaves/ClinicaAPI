@@ -4,21 +4,21 @@ using Clinica.Service;
 
 namespace Clinica.Api.Controllers
 {
-    [Route("api/horarios")]
+    [Route("api/roles")]
     [ApiController]
 
-    public class HorarioController : ControllerBase
+    public class RolController : ControllerBase
     {
         
-        private IHorarioService horarioService;
+        private IRolService rolService;
 
-        public HorarioController(IHorarioService horarioService)
+        public RolController(IRolService rolService)
         {
-            this.horarioService = horarioService;
+            this.rolService = rolService;
         }
 
         /// <summary>
-        /// Me permite devolver todas las horarioes
+        /// Me permite devolver todas los roles
         /// </summary>
         /// <returns></returns>
 
@@ -26,34 +26,34 @@ namespace Clinica.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                horarioService.GetAll()
+                rolService.GetAll()
             );
         }
 
 
         /// <summary>
-        /// Me permite ingresar una horario
+        /// Me permite ingresar un rol
         /// </summary>
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] Horario horario)
+        public ActionResult Post([FromBody] Rol rol)
         {
             return Ok(
-                horarioService.Save(horario)
+                rolService.Save(rol)
             );
         }
 
 
         /// <summary>
-        /// Me permite devolver una horario dependiendo de su id
+        /// Me permite devolver un rol dependiendo de su id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
             return Ok(
-                horarioService.Get(id)
+                rolService.Get(id)
             );
         }
 

@@ -4,21 +4,21 @@ using Clinica.Service;
 
 namespace Clinica.Api.Controllers
 {
-    [Route("api/horarios")]
+    [Route("api/turnos")]
     [ApiController]
 
-    public class HorarioController : ControllerBase
+    public class TurnoController : ControllerBase
     {
         
-        private IHorarioService horarioService;
+        private ITurnoService turnoService;
 
-        public HorarioController(IHorarioService horarioService)
+        public TurnoController(ITurnoService turnoService)
         {
-            this.horarioService = horarioService;
+            this.turnoService = turnoService;
         }
 
         /// <summary>
-        /// Me permite devolver todas las horarioes
+        /// Me permite devolver todas los turnoes
         /// </summary>
         /// <returns></returns>
 
@@ -26,34 +26,34 @@ namespace Clinica.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                horarioService.GetAll()
+                turnoService.GetAll()
             );
         }
 
 
         /// <summary>
-        /// Me permite ingresar una horario
+        /// Me permite ingresar un turno
         /// </summary>
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] Horario horario)
+        public ActionResult Post([FromBody] Turno turno)
         {
             return Ok(
-                horarioService.Save(horario)
+                turnoService.Save(turno)
             );
         }
 
 
         /// <summary>
-        /// Me permite devolver una horario dependiendo de su id
+        /// Me permite devolver un turno dependiendo de su id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
             return Ok(
-                horarioService.Get(id)
+                turnoService.Get(id)
             );
         }
 

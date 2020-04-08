@@ -4,5 +4,221 @@
         <name>Clinica.Api</name>
     </assembly>
     <members>
+        <member name="M:Clinica.Api.Controllers.EspecialidadController.Get">
+            <summary>
+            Me permite devolver todas las especialidades
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.EspecialidadController.Post(Clinica.Entity.Especialidad)">
+            <summary>
+            Me permite ingresar una especialidad
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.EspecialidadController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una especialidad dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioController.Get">
+            <summary>
+            Me permite devolver todas las horarioes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioController.Post(Clinica.Entity.Horario)">
+            <summary>
+            Me permite ingresar una horario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una horario dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioSeguroController.Get">
+            <summary>
+            Me permite devolver todas las horarioseguroes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioSeguroController.Post(Clinica.Entity.HorarioSeguro)">
+            <summary>
+            Me permite ingresar una horarioseguro
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.HorarioSeguroController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una horarioseguro dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoController.Get">
+            <summary>
+            Me permite devolver todas las medicoes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoController.Post(Clinica.Entity.Medico)">
+            <summary>
+            Me permite ingresar una medico
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una medico dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Get">
+            <summary>
+            Me permite devolver todas las medicoespecialidades
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Post(Clinica.Entity.MedicoEspecialidad)">
+            <summary>
+            Me permite ingresar un medicoespecialidad
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un medicoespecialidad dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.PacienteController.Get">
+            <summary>
+            Me permite devolver todos los pacientees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.PacienteController.Post(Clinica.Entity.Paciente)">
+            <summary>
+            Me permite ingresar un paciente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.PacienteController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un paciente dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.ReservaController.Get">
+            <summary>
+            Me permite devolver todas las reservaes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.ReservaController.Post(Clinica.Entity.Reserva)">
+            <summary>
+            Me permite ingresar una reserva
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.ReservaController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una reserva dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.RolController.Get">
+            <summary>
+            Me permite devolver todas los roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.RolController.Post(Clinica.Entity.Rol)">
+            <summary>
+            Me permite ingresar un rol
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.RolController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un rol dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SedeController.Get">
+            <summary>
+            Me permite devolver todas las sedes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SedeController.Post(Clinica.Entity.Sede)">
+            <summary>
+            Me permite ingresar una sede
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SedeController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una sede dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SeguroController.Get">
+            <summary>
+            Me permite devolver todos los seguros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SeguroController.Post(Clinica.Entity.Seguro)">
+            <summary>
+            Me permite ingresar un seguro
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SeguroController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un seguro dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.TurnoController.Get">
+            <summary>
+            Me permite devolver todas los turnoes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.TurnoController.Post(Clinica.Entity.Turno)">
+            <summary>
+            Me permite ingresar un turno
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.TurnoController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un turno dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.UsuarioController.Get">
+            <summary>
+            Me permite devolver todos los usuarios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.UsuarioController.Post(Clinica.Entity.Usuario)">
+            <summary>
+            Me permite ingresar un usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>
+            Me permite devolver un usuario dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>
