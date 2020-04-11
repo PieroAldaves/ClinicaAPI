@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Clinica.Entity;
 using Clinica.Repository;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Service.implementation
 {
@@ -30,6 +31,11 @@ namespace Clinica.Service.implementation
         public bool Save(MedicoEspecialidad entity)
         {
             return medicoespecialidadRepository.Save(entity);
+        }
+
+        public bool SaveEspecialidad(MedicoEspecialidadViewModel entity)
+        {
+            return medicoespecialidadRepository.SaveEspecialidad(entity);
         }
 
         public bool Update(MedicoEspecialidad entity)

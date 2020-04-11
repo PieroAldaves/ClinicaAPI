@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Clinica.Entity;
 using Clinica.Service;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Api.Controllers
 {
@@ -37,10 +38,10 @@ namespace Clinica.Api.Controllers
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] MedicoEspecialidad medicoespecialidad)
+        public ActionResult Post([FromBody] MedicoEspecialidadViewModel medicoespecialidad)
         {
             return Ok(
-                medicoespecialidadService.Save(medicoespecialidad)
+                medicoespecialidadService.SaveEspecialidad(medicoespecialidad)
             );
         }
 
