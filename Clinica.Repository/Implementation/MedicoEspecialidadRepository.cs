@@ -58,7 +58,6 @@ namespace Clinica.Repository.Implementation
             {
                 entity.Medico = context.medicos.Find(entity.MedicoId);
                 entity.Especialidad = context.especialidades.Find(entity.EspecialidadId);
-                entity.Horario = context.horarios.Find(entity.HorarioId);
 
                 context.Add(entity);
                 context.SaveChanges();

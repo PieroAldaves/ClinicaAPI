@@ -12,10 +12,6 @@ namespace Clinica.Entity
 
         public int EspecialidadId { get; set; }
 
-        public Horario Horario { get; set; }   
-
-        public int HorarioId { get; set; }
-
 
     }
 }

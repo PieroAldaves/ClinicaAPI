@@ -25,6 +25,10 @@ namespace Clinica.Entity
 
         public List<Turno> Turnos { get; set; }
 
+        public MedicoEspecialidad MedicoEspecialidad { get; set; }
+        
+        public int MedicoEspecilidadId { get; set; }
+
 
 
 
