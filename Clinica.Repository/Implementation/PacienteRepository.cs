@@ -56,9 +56,24 @@ namespace Clinica.Repository.Implementation
         {
             try
             {
+
+                Usuario u1 = new Usuario();
+                u1.UserName = entity.Email;
+                u1.UserPassword = entity.Contraseña;
+                u1.UsuarioState = true;
+                u1.RolId = 1;
+                u1.Rol = context.roles.Find(u1.RolId);
+
+                context.Add(u1);
+                context.SaveChanges();
+
+                entity.UsuarioId = context.usuarios.Single(x => x.UserName == entity.Email).UsuarioId;
                 entity.Usuario = context.usuarios.Find(entity.UsuarioId);
+
                 context.Add(entity);
                 context.SaveChanges();
+
+
 
             }
             catch (System.Exception)

@@ -1,13 +1,13 @@
-namespace Clinica.Entity
+namespace Clinica.Repository.ViewModel
 {
-    public class Paciente
+    public class PacienteViewModel  
     {
-       public int PacienteId { get; set; }
+        public int PacienteId { get; set; }
         public string Name{get;set;}
 
-        public string LastName_Maternal {get;set;}
-
         public string LastName_Paternal {get;set;}
+
+        public string LastName_Maternal {get;set;}
 
         public string Email{get;set;}
 
@@ -19,9 +19,6 @@ namespace Clinica.Entity
 
          
         public string Genger{get;set;}
-
-
-        public Usuario Usuario{get;set;}
 
         public int UsuarioId{get;set;}
 
@@ -37,7 +34,13 @@ namespace Clinica.Entity
         
       public System.DateTime BornDate { get; set; }
 
-      public string Contraseña{get;set;}
 
     }
+
+
+
+
+
+
+
 }
