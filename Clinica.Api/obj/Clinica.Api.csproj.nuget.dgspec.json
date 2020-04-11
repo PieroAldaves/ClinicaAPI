@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Api\\Clinica.Api.csproj": {}
+    "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.api\\Clinica.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Api\\Clinica.Api.csproj": {
+    "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.api\\Clinica.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Api\\Clinica.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.api\\Clinica.Api.csproj",
         "projectName": "Clinica.Api",
-        "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Api\\Clinica.Api.csproj",
+        "projectPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.api\\Clinica.Api.csproj",
         "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.Api\\obj\\",
+        "outputPath": "C:\\Users\\Piero\\Desktop\\OCTAVO CICLO\\Taller de Desempeño Pro\\Clinica API O\\ClinicaAPI\\Clinica.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -24,12 +24,6 @@ namespace Clinica.Entity
          
         public string Genger{get;set;}
 
-
-        public Usuario Usuario{get;set;}
-
-        public int UsuarioId{get;set;}
-
-
        public string Country{get;set;} 
 
        public string City{get;set;}

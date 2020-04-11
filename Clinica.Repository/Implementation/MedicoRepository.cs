@@ -56,10 +56,8 @@ namespace Clinica.Repository.Implementation
         {
             try
             {
-                entity.Usuario = context.usuarios.Find(entity.UsuarioId);
                 context.Add(entity);
                 context.SaveChanges();
-
             }
             catch (System.Exception)
             {

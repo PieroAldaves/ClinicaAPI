@@ -13,6 +13,8 @@ namespace Clinica.Entity
         
         public string UserPassword{get;set;}
 
+        public bool UsuarioState{get;set;}
+
         public Rol Rol{get;set;}
 
         public int RolId{get;set;}

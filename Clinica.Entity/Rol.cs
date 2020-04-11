@@ -10,7 +10,6 @@ namespace Clinica.Entity
         
         public string RolDescription{get;set;}
 
-        public bool RolState{get;set;}
 
         public List<Usuario> Usuarios{get;set;}
     }
