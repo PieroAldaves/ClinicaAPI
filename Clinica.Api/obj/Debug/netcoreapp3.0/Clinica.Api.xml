@@ -82,7 +82,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Post(Clinica.Repository.ViewModel.MedicoEspecialidadViewModel)">
+        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Post(Clinica.Entity.MedicoEspecialidad)">
             <summary>
             Me permite ingresar un medicoespecialidad
             </summary>

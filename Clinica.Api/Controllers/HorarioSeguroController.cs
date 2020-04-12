@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Clinica.Entity;
 using Clinica.Service;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Api.Controllers
 {

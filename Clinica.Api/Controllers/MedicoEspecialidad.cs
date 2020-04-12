@@ -38,10 +38,10 @@ namespace Clinica.Api.Controllers
         /// <returns></returns>
 
         [HttpPost]
-        public ActionResult Post([FromBody] MedicoEspecialidadViewModel medicoespecialidad)
+        public ActionResult Post([FromBody] MedicoEspecialidad medicoespecialidad)
         {
             return Ok(
-                medicoespecialidadService.SaveEspecialidad(medicoespecialidad)
+                medicoespecialidadService.Save(medicoespecialidad)
             );
         }
 

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Clinica.Entity;
 using Clinica.Repository;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Service.implementation
 {
@@ -30,6 +31,11 @@ namespace Clinica.Service.implementation
         public bool Save(HorarioSeguro entity)
         {
             return horarioseguroRepository.Save(entity);
+        }
+
+        public bool SaveHorarioSeguro(HorarioSeguroViewModel entity)
+        {
+            return horarioseguroRepository.SaveHorarioSeguro(entity);
         }
 
         public bool Update(HorarioSeguro entity)

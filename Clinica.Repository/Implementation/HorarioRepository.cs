@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Clinica.Entity;
@@ -58,10 +59,37 @@ namespace Clinica.Repository.Implementation
             
             try
             {
+
                 entity.Sede = context.sedes.Find(entity.SedeId);
+                entity.MedicoEspecialidad = context.medicoespecialidades.Find(entity.MedicoEspecilidadId);
+
+                DateTime inicio = entity.FechaHoraInicio;
+                DateTime fin = entity.FechaHoraFin;
+
 
                 context.Add(entity);
                 context.SaveChanges();
+                
+                
+                while (inicio < fin)
+                {
+                    Turno T1 = new Turno();
+                    T1.Disponible = true;
+                    T1.Constante = 30;
+                    T1.FechaHoraInicio = inicio;
+                    T1.FechaHoraFin = inicio.AddMinutes(30);
+                    T1.HorarioId = context.horarios.OrderByDescending(o => o.HorarioId).First().HorarioId;
+                    T1.Horario = entity;
+
+                    context.Add(T1);
+                    context.SaveChanges();
+
+                    inicio = inicio.AddMinutes(30);
+
+                }
+
+                
+
             }
             catch (System.Exception)
             {

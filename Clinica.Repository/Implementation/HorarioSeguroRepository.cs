@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Clinica.Entity;
 using Clinica.Repository.context;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Repository.Implementation
 {
@@ -68,6 +69,35 @@ namespace Clinica.Repository.Implementation
                 
                 return false;
             }
+            return true;
+        }
+
+        public bool SaveHorarioSeguro(HorarioSeguroViewModel entity)
+        {
+            try
+            {
+                Seguro S1 = new Seguro();
+                S1.SeguroName = entity.SeguroName;
+
+                context.Add(S1);
+                context.SaveChanges();
+
+                HorarioSeguro HoSe1 =new HorarioSeguro();
+                HoSe1.HorarioId = entity.HorarioId;
+                HoSe1.Horario = context.horarios.Find(entity.HorarioId);
+                HoSe1.SeguroId = context.seguros.OrderByDescending(o => o.SeguroName ==entity.SeguroName).First().SeguroId;
+                HoSe1.Seguro = S1;
+                
+                context.Add(HoSe1);
+                context.SaveChanges();
+                
+            }
+            catch (System.Exception)
+            {
+                
+                return false;
+            }
+            
             return true;
         }
 
