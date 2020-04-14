@@ -18,7 +18,7 @@ namespace Clinica.Api.Controllers
         }
 
         /// <summary>
-        /// Me permite devolver todas los turnoes
+        /// Me permite devolver todos los turnos
         /// </summary>
         /// <returns></returns>
 
@@ -27,6 +27,20 @@ namespace Clinica.Api.Controllers
         {
             return Ok(
                 turnoService.GetAll()
+            );
+        }
+
+
+        /// <summary>
+        /// Me permite devolver todos los turnos disponibles
+        /// </summary>
+        /// <returns></returns>
+        [Route("/disponibles")]
+        [HttpGet]
+        public ActionResult Get2()
+        {
+            return Ok(
+                turnoService.GetTurnosDisponibles()
             );
         }
 

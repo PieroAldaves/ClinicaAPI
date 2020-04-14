@@ -186,7 +186,13 @@
         </member>
         <member name="M:Clinica.Api.Controllers.TurnoController.Get">
             <summary>
-            Me permite devolver todas los turnoes
+            Me permite devolver todos los turnos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.TurnoController.Get2">
+            <summary>
+            Me permite devolver todos los turnos disponibles
             </summary>
             <returns></returns>
         </member>

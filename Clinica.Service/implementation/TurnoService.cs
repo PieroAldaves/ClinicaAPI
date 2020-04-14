@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Clinica.Entity;
 using Clinica.Repository;
+using Clinica.Repository.ViewModel;
 
 namespace Clinica.Service.implementation
 {
@@ -25,6 +26,11 @@ namespace Clinica.Service.implementation
         public IEnumerable<Turno> GetAll()
         {
             return turnoRepository.GetAll();
+        }
+
+        public IEnumerable<TurnoViewModel> GetTurnosDisponibles()
+        {
+            return turnoRepository.GetTurnosDisponibles();
         }
 
         public bool Save(Turno entity)
