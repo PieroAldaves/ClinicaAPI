@@ -35,7 +35,7 @@ namespace Clinica.Api.Controllers
         /// Me permite devolver todos los turnos disponibles
         /// </summary>
         /// <returns></returns>
-        [Route("/disponibles")]
+        [Route("disponibles")]
         [HttpGet]
         public ActionResult Get2()
         {

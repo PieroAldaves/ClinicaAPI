@@ -60,9 +60,16 @@ namespace Clinica.Repository.Implementation
                 entity.Medico = context.medicos.Find(entity.MedicoId);
                 entity.Especialidad = context.especialidades.Find(entity.EspecialidadId);
                 entity.Horario = context.horarios.Find(entity.HorarioId);
-                entity.Turno = context.turnos.Find(entity.TurnoId);
+                
                 entity.Seguro = context.seguros.Find(entity.SeguroId);
                 entity.Sede = context.sedes.Find(entity.SedeId);
+
+                Turno T1 = context.turnos.Find(entity.TurnoId);
+                T1.Disponible = false;
+                context.Update(T1);
+                context.SaveChanges();
+
+                entity.Turno = context.turnos.Find(entity.TurnoId);
 
                 context.Add(entity);
                 context.SaveChanges();
