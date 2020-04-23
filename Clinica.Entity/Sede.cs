@@ -9,9 +9,9 @@ namespace Clinica.Entity
         public string SedeAddress { get; set; }
 
 
-        public float latitud { get; set; }
+        public string latitud { get; set; }
 
-        public float longitud { get; set; } 
+        public string longitud { get; set; } 
 
         
 

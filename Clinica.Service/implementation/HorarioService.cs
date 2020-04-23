@@ -12,6 +12,11 @@ namespace Clinica.Service.implementation
             this.horarioRepository=horarioRepository;
         }
 
+        public bool CargarHorarios()
+        {
+            return horarioRepository.CargarHorarios();
+        }
+
         public bool Delete(int id)
         {
             return horarioRepository.Delete(id);

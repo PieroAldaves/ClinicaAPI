@@ -19,7 +19,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using RapiSolver.Api;
+
 
 namespace Clinica.Api
 {
@@ -125,6 +125,8 @@ namespace Clinica.Api
             {
                 c.SwaggerEndpoint(SwaggerConfiguration.EndpointUrl, SwaggerConfiguration.EndpointDescription);
             });
+            
+            
 
         }
     }

@@ -58,6 +58,21 @@ namespace Clinica.Api.Controllers
         }
 
 
+
+        /// <summary>
+        /// carga horarios
+        /// </summary>
+        /// <returns></returns>
+
+        [HttpGet("ruta")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                horarioService.CargarHorarios()
+            );
+        }
+
+
     }
 
 

@@ -137,3 +137,4 @@ C:\Users\Piero\Desktop\OCTAVO CICLO\Taller de Desempeño Pro\Clinica API O\Clini
 C:\Users\Piero\Desktop\OCTAVO CICLO\Taller de Desempeño Pro\Clinica API O\ClinicaAPI\Clinica.Api\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Piero\Desktop\OCTAVO CICLO\Taller de Desempeño Pro\Clinica API O\ClinicaAPI\Clinica.Api\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Piero\Desktop\OCTAVO CICLO\Taller de Desempeño Pro\Clinica API O\ClinicaAPI\Clinica.Api\obj\Debug\netcoreapp3.0\Clinica.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Piero\Desktop\OCTAVO CICLO\Taller de Desempeño Pro\Clinica API O\ClinicaAPI\Clinica.Api\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll

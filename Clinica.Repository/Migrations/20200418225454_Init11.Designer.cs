@@ -3,15 +3,17 @@ using System;
 using Clinica.Repository.context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Clinica.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200418225454_Init11")]
+    partial class Init11
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,7 +60,9 @@ namespace Clinica.Repository.Migrations
 
                     b.Property<DateTime>("HorarioFecha");
 
-                    b.Property<int>("MedicoEspecialidadId");
+                    b.Property<int?>("MedicoEspecialidadId");
+
+                    b.Property<int>("MedicoEspecilidadId");
 
                     b.Property<int>("SedeId");
 
@@ -244,9 +248,9 @@ namespace Clinica.Repository.Migrations
 
                     b.Property<string>("SedeName");
 
-                    b.Property<string>("latitud");
+                    b.Property<float>("latitud");
 
-                    b.Property<string>("longitud");
+                    b.Property<float>("longitud");
 
                     b.HasKey("SedeId");
 
@@ -311,8 +315,7 @@ namespace Clinica.Repository.Migrations
                 {
                     b.HasOne("Clinica.Entity.MedicoEspecialidad", "MedicoEspecialidad")
                         .WithMany()
-                        .HasForeignKey("MedicoEspecialidadId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("MedicoEspecialidadId");
 
                     b.HasOne("Clinica.Entity.Sede", "Sede")
                         .WithMany()

@@ -1,4 +1,4 @@
-namespace RapiSolver.Api
+namespace Clinica.Api
 {
     public class SwaggerConfiguration
     {

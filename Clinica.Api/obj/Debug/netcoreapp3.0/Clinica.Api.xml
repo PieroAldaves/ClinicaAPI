@@ -40,6 +40,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Clinica.Api.Controllers.HorarioController.Get2">
+            <summary>
+            carga horarios
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Clinica.Api.Controllers.HorarioSeguroController.Get">
             <summary>
             Me permite devolver todas las horarioseguroes

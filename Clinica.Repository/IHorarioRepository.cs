@@ -5,7 +5,7 @@ namespace Clinica.Repository
 {
     public interface IHorarioRepository: IRepository<Horario>
     {
-         
+         bool CargarHorarios();
     }
 
 }
