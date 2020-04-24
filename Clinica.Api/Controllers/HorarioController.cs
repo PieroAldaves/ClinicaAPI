@@ -64,7 +64,7 @@ namespace Clinica.Api.Controllers
         /// </summary>
         /// <returns></returns>
 
-        [HttpGet("ruta")]
+        [HttpGet("cargar")]
         public ActionResult Get2()
         {
             return Ok(

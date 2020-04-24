@@ -1,8 +1,10 @@
 
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Clinica.Entity;
 using Clinica.Repository.context;
+using Newtonsoft.Json;
 
 namespace Clinica.Repository.Implementation
 {
@@ -13,6 +15,38 @@ namespace Clinica.Repository.Implementation
 
         public SedeRepository (ApplicationDbContext context) {
             this.context = context;
+        }
+
+        public bool Cargar()
+        {
+            try
+            {
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Datos-Seguro.json");
+   
+                string json = r.ReadToEnd();
+                List<Sede> sedes = JsonConvert.DeserializeObject<List<Sede>>(json);
+
+
+                
+                foreach (var sede in sedes)
+                {
+                    Sede s1 = new Sede();
+                    s1.SedeName = sede.SedeName;
+                    s1.SedeAddress = sede.SedeAddress;
+                    s1.longitud = sede.longitud;
+                    s1.latitud = sede.latitud;
+
+                    context.Add(s1);
+                    context.SaveChanges();
+
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                return true;
+            }
+            return false;
         }
 
         public bool Delete(int id)

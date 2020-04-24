@@ -58,6 +58,20 @@ namespace Clinica.Api.Controllers
         }
 
 
+        /// <summary>
+        /// Me permite devolver todas las especialidades
+        /// </summary>
+        /// <returns></returns>
+
+        [HttpGet("cargar")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                especialidadService.Cargar()
+            );
+        }
+
+
     }
 
 

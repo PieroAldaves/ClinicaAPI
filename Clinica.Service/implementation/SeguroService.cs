@@ -12,6 +12,11 @@ namespace Clinica.Service.implementation
             this.seguroRepository=seguroRepository;
         }
 
+        public bool Cargar()
+        {
+            return seguroRepository.Cargar();
+        }
+
         public bool Delete(int id)
         {
             return seguroRepository.Delete(id);

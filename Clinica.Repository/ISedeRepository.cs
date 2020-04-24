@@ -5,6 +5,6 @@ namespace Clinica.Repository
 {
     public interface ISedeRepository: IRepository<Sede>
     {
-         
+         bool Cargar();
     }
 }

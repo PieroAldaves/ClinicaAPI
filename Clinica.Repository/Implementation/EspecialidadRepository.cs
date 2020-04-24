@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Clinica.Entity;
 using Clinica.Repository.context;
+using Newtonsoft.Json;
 
 namespace Clinica.Repository.Implementation
 {
@@ -14,6 +16,36 @@ namespace Clinica.Repository.Implementation
         public EspecialidadRepository(ApplicationDbContext context)
         {
             this.context = context;
+        }
+
+        public bool Cargar()
+        {
+            try
+            {
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Datos-Seguro.json");
+   
+                string json = r.ReadToEnd();
+                List<Especialidad> especialidades = JsonConvert.DeserializeObject<List<Especialidad>>(json);
+
+
+                
+                foreach (var especialidad in especialidades)
+                {
+                    Especialidad e1 = new Especialidad();
+                    e1.EspecialidadName = especialidad.EspecialidadName;
+                    
+
+                    context.Add(e1);
+                    context.SaveChanges();
+
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                return false;
+            }
+            return true;
         }
 
         public bool Delete(int id)

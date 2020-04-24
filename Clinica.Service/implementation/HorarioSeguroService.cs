@@ -13,6 +13,11 @@ namespace Clinica.Service.implementation
             this.horarioseguroRepository=horarioseguroRepository;
         }
 
+        public bool Cargar()
+        {
+            return horarioseguroRepository.Cargar();
+        }
+
         public bool Delete(int id)
         {
             return horarioseguroRepository.Delete(id);

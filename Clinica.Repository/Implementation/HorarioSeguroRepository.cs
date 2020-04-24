@@ -1,9 +1,11 @@
 
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Clinica.Entity;
 using Clinica.Repository.context;
 using Clinica.Repository.ViewModel;
+using Newtonsoft.Json;
 
 namespace Clinica.Repository.Implementation
 {
@@ -14,6 +16,39 @@ namespace Clinica.Repository.Implementation
 
         public HorarioSeguroRepository (ApplicationDbContext context) {
             this.context = context;
+        }
+
+        public bool Cargar()
+        {
+            try
+            {
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\HoSeguros\HorarioxCardio-SEGURO.json");
+   
+                string json = r.ReadToEnd();
+                List<HorarioSeguro> horarioseguros = JsonConvert.DeserializeObject<List<HorarioSeguro>>(json);
+
+
+                
+                foreach (var horarioseguro in horarioseguros)
+                {
+                    HorarioSeguro hs1 = new HorarioSeguro();
+                    hs1.HorarioId = horarioseguro.HorarioId;
+                    hs1.SeguroId = horarioseguro.SeguroId;
+                    hs1.Horario = context.horarios.Find(horarioseguro.HorarioId);
+                    hs1.Seguro = context.seguros.Find(horarioseguro.SeguroId);
+
+
+                    context.Add(hs1);
+                    context.SaveChanges();
+
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                return false;
+            }
+            return true;
         }
 
         public bool Delete(int id)

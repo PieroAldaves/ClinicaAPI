@@ -8,6 +8,8 @@ namespace Clinica.Repository
     {
 
         bool SaveEspecialidad(MedicoEspecialidadViewModel entity);
+
+        bool Cargar();
     }
     
 }

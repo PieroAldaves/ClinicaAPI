@@ -58,6 +58,19 @@ namespace Clinica.Api.Controllers
             );
         }
 
+        /// <summary>
+        /// Me permite cargar todos los medicoespecialidad 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("cargar")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                medicoespecialidadService.Cargar()
+            );
+        }
+
+
 
     }
 

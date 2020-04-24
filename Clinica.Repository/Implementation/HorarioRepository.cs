@@ -115,7 +115,7 @@ namespace Clinica.Repository.Implementation
             try
             {
                 
-                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Horarioxcardiologia.json");
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\HorarioxTraumatologia.json");
    
                 string json = r.ReadToEnd();
                 List<Horario> horarios = JsonConvert.DeserializeObject<List<Horario>>(json);

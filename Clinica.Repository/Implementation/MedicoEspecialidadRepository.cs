@@ -1,9 +1,11 @@
 
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Clinica.Entity;
 using Clinica.Repository.context;
 using Clinica.Repository.ViewModel;
+using Newtonsoft.Json;
 
 namespace Clinica.Repository.Implementation
 {
@@ -14,6 +16,40 @@ namespace Clinica.Repository.Implementation
 
         public MedicoEspecialidadRepository (ApplicationDbContext context) {
             this.context = context;
+        }
+
+        public bool Cargar()
+        {
+            try
+            {
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Med_especialidad.json");
+   
+                string json = r.ReadToEnd();
+                List<MedicoEspecialidad> medicoespecialidades = JsonConvert.DeserializeObject<List<MedicoEspecialidad>>(json);
+
+
+                
+                foreach (var medicoespecialidad in medicoespecialidades)
+                {
+                    MedicoEspecialidad me1 = new MedicoEspecialidad();
+                    me1.EspecialidadId = medicoespecialidad.EspecialidadId;
+                    me1.MedicoId = medicoespecialidad.MedicoId;
+
+                    me1.Medico = context.medicos.Find(medicoespecialidad.MedicoId);
+                    me1.Especialidad = context.especialidades.Find(medicoespecialidad.EspecialidadId);
+                    
+
+                    context.Add(me1);
+                    context.SaveChanges();
+
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                return false;
+            }
+            return true;
         }
 
         public bool Delete(int id)

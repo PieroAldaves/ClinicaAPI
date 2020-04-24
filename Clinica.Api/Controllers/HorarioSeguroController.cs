@@ -59,6 +59,19 @@ namespace Clinica.Api.Controllers
         }
 
 
+        /// <summary>
+        /// Me permite cargat Todos los horarioseguro 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                horarioseguroService.Cargar()
+            );
+        }
+
+
     }
 
 

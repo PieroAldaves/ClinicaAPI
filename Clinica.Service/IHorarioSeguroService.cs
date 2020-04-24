@@ -6,6 +6,7 @@ namespace Clinica.Service
     public interface IHorarioSeguroService: IService<HorarioSeguro>
     {
         bool SaveHorarioSeguro (HorarioSeguroViewModel entity);
+        bool Cargar();
     }
     
 }

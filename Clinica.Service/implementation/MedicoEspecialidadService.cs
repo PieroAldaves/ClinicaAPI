@@ -13,6 +13,11 @@ namespace Clinica.Service.implementation
             this.medicoespecialidadRepository=medicoespecialidadRepository;
         }
 
+        public bool Cargar()
+        {
+            return medicoespecialidadRepository.Cargar();
+        }
+
         public bool Delete(int id)
         {
             return medicoespecialidadRepository.Delete(id);

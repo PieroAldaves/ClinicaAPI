@@ -58,6 +58,20 @@ namespace Clinica.Api.Controllers
         }
 
 
+        /// <summary>
+        /// Me permite cargar todas las sedes
+        /// </summary>
+        /// <returns></returns>
+
+        [HttpGet("cargar")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                sedeService.Cargar()
+            );
+        }
+
+
     }
 
 

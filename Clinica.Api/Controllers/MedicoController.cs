@@ -57,6 +57,18 @@ namespace Clinica.Api.Controllers
             );
         }
 
+        /// <summary>
+        /// Me permite devolver una medico dependiendo de su id
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("cargar")]
+        public ActionResult Get2()
+        {
+            return Ok(
+                medicoService.Cargar()
+            );
+        }
+
 
     }
 
