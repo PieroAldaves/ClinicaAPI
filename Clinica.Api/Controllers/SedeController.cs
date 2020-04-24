@@ -57,7 +57,7 @@ namespace Clinica.Api.Controllers
             );
         }
 
-
+        
         /// <summary>
         /// Me permite cargar todas las sedes
         /// </summary>
@@ -70,7 +70,7 @@ namespace Clinica.Api.Controllers
                 sedeService.Cargar()
             );
         }
-
+        
 
     }
 

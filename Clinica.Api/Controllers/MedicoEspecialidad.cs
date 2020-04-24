@@ -57,7 +57,10 @@ namespace Clinica.Api.Controllers
                 medicoespecialidadService.Get(id)
             );
         }
+        
 
+
+        
         /// <summary>
         /// Me permite cargar todos los medicoespecialidad 
         /// </summary>
@@ -69,6 +72,7 @@ namespace Clinica.Api.Controllers
                 medicoespecialidadService.Cargar()
             );
         }
+        
 
 
 

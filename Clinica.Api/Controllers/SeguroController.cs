@@ -57,12 +57,12 @@ namespace Clinica.Api.Controllers
             );
         }
 
-
+        
         /// <summary>
         /// Me permite cargar todos los seguros
         /// </summary>
         /// <returns></returns>
-
+        
         [HttpGet("cargar")]
         public ActionResult Get2()
         {
@@ -70,7 +70,7 @@ namespace Clinica.Api.Controllers
                 seguroService.Cargar()
             );
         }
-
+        
 
     }
 

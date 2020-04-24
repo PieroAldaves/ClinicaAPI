@@ -57,6 +57,8 @@ namespace Clinica.Api.Controllers
             );
         }
 
+        
+
         /// <summary>
         /// Me permite devolver una medico dependiendo de su id
         /// </summary>
@@ -68,6 +70,8 @@ namespace Clinica.Api.Controllers
                 medicoService.Cargar()
             );
         }
+
+        
 
 
     }

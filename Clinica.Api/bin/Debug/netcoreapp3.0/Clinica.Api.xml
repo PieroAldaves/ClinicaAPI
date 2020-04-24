@@ -22,6 +22,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Clinica.Api.Controllers.EspecialidadController.Get2">
+            <summary>
+            Me permite devolver todas las especialidades
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Clinica.Api.Controllers.HorarioController.Get">
             <summary>
             Me permite devolver todas las horarioes
@@ -64,6 +70,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Clinica.Api.Controllers.HorarioSeguroController.Get2">
+            <summary>
+            Me permite cargat Todos los horarioseguro 
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Clinica.Api.Controllers.MedicoController.Get">
             <summary>
             Me permite devolver todas las medicoes
@@ -77,6 +89,12 @@
             <returns></returns>
         </member>
         <member name="M:Clinica.Api.Controllers.MedicoController.Get(System.Int32)">
+            <summary>
+            Me permite devolver una medico dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoController.Get2">
             <summary>
             Me permite devolver una medico dependiendo de su id
             </summary>
@@ -97,6 +115,12 @@
         <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Get(System.Int32)">
             <summary>
             Me permite devolver un medicoespecialidad dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.MedicoEspecialidadController.Get2">
+            <summary>
+            Me permite cargar todos los medicoespecialidad 
             </summary>
             <returns></returns>
         </member>
@@ -172,6 +196,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Clinica.Api.Controllers.SedeController.Get2">
+            <summary>
+            Me permite cargar todas las sedes
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Clinica.Api.Controllers.SeguroController.Get">
             <summary>
             Me permite devolver todos los seguros
@@ -187,6 +217,12 @@
         <member name="M:Clinica.Api.Controllers.SeguroController.Get(System.Int32)">
             <summary>
             Me permite devolver un seguro dependiendo de su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Clinica.Api.Controllers.SeguroController.Get2">
+            <summary>
+            Me permite cargar todos los seguros
             </summary>
             <returns></returns>
         </member>
