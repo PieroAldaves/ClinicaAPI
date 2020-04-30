@@ -115,13 +115,11 @@ namespace Clinica.Repository.Implementation
             try
             {
                 
-                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Horarios\");
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV2\Horarios\");
    
                 string json = r.ReadToEnd();
                 List<Horario> horarios = JsonConvert.DeserializeObject<List<Horario>>(json);
 
-
-                
                 foreach (var horario in horarios)
                 {
                     Horario h1 = new Horario();
@@ -143,8 +141,7 @@ namespace Clinica.Repository.Implementation
 
                     context.Add(h1);
                     context.SaveChanges();
-                    
-                    
+                                 
                     while (inicio < fin)
                     {
                         Turno T1 = new Turno();
@@ -162,9 +159,7 @@ namespace Clinica.Repository.Implementation
 
                     }
 
-
                 }
-
             }
             catch (System.Exception)
             {

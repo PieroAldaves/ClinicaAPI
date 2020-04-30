@@ -22,7 +22,7 @@ namespace Clinica.Repository.Implementation
         {
             try
             {
-                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Med_especialidad.json");
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV2\MedicoxEspecialidad.json");
    
                 string json = r.ReadToEnd();
                 List<MedicoEspecialidad> medicoespecialidades = JsonConvert.DeserializeObject<List<MedicoEspecialidad>>(json);

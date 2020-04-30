@@ -21,7 +21,7 @@ namespace Clinica.Repository.Implementation
         {
             try
             {
-                 StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\Datos-Seguro.json");
+                 StreamReader r = new StreamReader(@"C:\Desarrollador\CSV2\Seguro.json");
    
                 string json = r.ReadToEnd();
                 List<Seguro> seguros = JsonConvert.DeserializeObject<List<Seguro>>(json);

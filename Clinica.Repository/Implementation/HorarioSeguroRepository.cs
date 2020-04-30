@@ -22,7 +22,7 @@ namespace Clinica.Repository.Implementation
         {
             try
             {
-                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV\HoSeguros\");
+                StreamReader r = new StreamReader(@"C:\Desarrollador\CSV2\HorariosxSeguro\");
    
                 string json = r.ReadToEnd();
                 List<HorarioSeguro> horarioseguros = JsonConvert.DeserializeObject<List<HorarioSeguro>>(json);
