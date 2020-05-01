@@ -63,7 +63,7 @@ namespace Clinica.Repository.Implementation
             .Include(o => o.Horario.MedicoEspecialidad.Especialidad)
             .Include(o => o.Horario.Sede)
             .OrderByDescending(o => o.TurnoId)
-            .Take(100)
+            .Take(1000000)
             .Where(o => o.Disponible == true)
             .ToList();
 
